@@ -1,0 +1,266 @@
+/* main part */
+
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Header navigation links style */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;  /* This centers the navigation links */
+}
+
+header nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #4CAF50;
+}
+
+/* Section titles and text style */
+section h1, section h2, section p {
+    text-align: center;  /* This centers the section titles and text in all sections */
+}
+
+/* Main section style */
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative; /* 改为relative避免遮盖其他内容，或根据需要调整 */
+    width: 100%;
+    clear: both; /* 清除浮动影响 */
+}
+
+
+/* about part */
+.about-section {
+    margin: 30px auto; /* 上下間距保持30px，左右自動居中 */
+    padding: 15px;
+    max-width: 60%; /* 最大寬度為容器寬度的80% */
+    width: 100%; /* 預設寬度為100%，會自動縮放到max-width的限制 */
+}
+
+.about-section p{
+    margin: 30px auto; /* 上下間距保持30px，左右自動居中 */
+    padding: 15px;
+    text-align: justify;
+}
+
+/* Timeline styles */
+.experience-section {
+    width: 80%;  
+    margin: 0 auto;
+    text-align: left;
+    /* background-color: #007BFF; */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 将时间轴项目居中对齐 */
+}
+
+.timeline-item {
+    width: 100%; /* 保证时间线项使用可用空间 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* 确保时间线内容水平居中 */
+    margin-bottom: 20px;
+}
+
+.timeline-date {
+    margin-right: 20px; /* 与时间标记保持间距 */
+    color: #4CAF50;
+}
+
+.timeline-marker {
+    width: 20px;
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    margin-right: 10px; /* 与内容保持一定距离 */
+}
+
+.timeline-content {
+    padding-left: 20px;
+    border-left: 3px solid #4CAF50;
+}
+
+
+/* Education part */
+.education-section {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+}
+
+.education-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.education-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.school-and-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.school-name, .degree, .gpa {
+    margin: 0;
+    padding-left: 0;  /* 确保没有内边距推动文本 */
+    text-align: left;  /* 确保文本对齐方式为左对齐 */
+    width: auto;  /* 自动调整宽度 */
+}
+
+.school-name {
+    font-size: 1.25rem;
+    color: #333;
+    flex-grow: 0;  /* 防止标题区域过度扩展 */
+    white-space: nowrap;  /* 防止标题换行 */
+}
+
+.degree, .gpa {
+    flex-grow: 1;  /* 允许详细信息扩展以填充空间 */
+    padding-left: 10px;  /* 为详细信息提供一点空间 */
+}
+
+.date {
+    margin: 0;
+    color: #666;
+    white-space: nowrap;
+    padding-left: 10px;  /* 与学校名称保持一定的空间 */
+    flex-shrink: 0;  /* 防止日期部分被压缩 */
+}
+
+
+
+/* Skills part */
+/* Skills part */
+.skills-section {
+    width: 50%;  /* 或者根据页面布局调整宽度 */
+    margin: 20px auto; /* 居中 */
+    text-align: left;
+}
+
+.skills-container {
+    background-color: #fff; /* 白色背景 */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15); /* 添加阴影以提升层次感 */
+    border-radius: 10px; /* 圆角边框 */
+}
+
+.skill-category {
+    margin-bottom: 20px; /* 每个类别之间的间距 */
+}
+
+.skill-category h3 {
+    color: #333; /* 暗灰色文本 */
+    margin-bottom: 10px; /* 标题下的间距 */
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap; /* 允许技能标签换行 */
+    gap: 10px; /* 设置技能之间的间距 */
+}
+
+.skill {
+    background-color: #f0f0f0; /* 技能背景颜色 */
+    padding: 5px 10px; /* 内边距 */
+    border-radius: 5px; /* 圆角边框 */
+    font-size: 0.9rem; /* 文字大小 */
+}
+
+
+
+
+/* projects part */
+.project-section {
+    margin: 30px auto; /* 上下間距保持30px，左右自動居中 */
+    padding: 15px;
+    max-width: 50%; /* 最大寬度為容器寬度的80% */
+    width: 100%; /* 預設寬度為100%，會自動縮放到max-width的限制 */
+}
+
+.project-container {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f8f9fa; /* 設定背景顏色 */
+    border: 1px solid #ddd; /* 設定邊框 */
+    padding: 15px;
+}
+
+.project-image {
+    flex: 0 0 250px; /* 固定寬度為200px，不變化 */
+    height: 250px; /* 固定高度 */
+    margin-right: 20px; /* 圖片與描述之間的間距 */
+    overflow: hidden; /* 如果圖片太大，隱藏超出部分 */
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-description {
+    flex: 1; /* 描述部分佔據剩餘空間 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 在頂部和按鈕之間分配空間 */
+}
+
+.project-description h3 {
+    margin-top: 0; /* 移除標題的頂部間距 */
+    text-align: center;
+}
+
+.project-description p {
+    margin-top: 0; /* 移除標題的頂部間距 */
+    text-align: justify;
+}
+
+.view-project-btn {
+    align-self: center; /* 將按鈕居中於描述部分 */
+    display: block;
+    margin: 10px auto 0; /* 按鈕居中，並有間距 */
+    padding: 5px 15px;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+

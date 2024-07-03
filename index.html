@@ -1,12 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>Hello, World!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a simple example of an HTML page.</p>
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+        </nav>
+    </header>
+
+    <section id="about" class="about-section">
+        <h1>Tzuyi Chuang - Software Engineer</h1>
+        <h2>about</h2>
+        <p>
+            &nbsp;&nbsp;I'm Tzu-Yi (Cliff) Chuang, 
+            a software engineer currently advancing my studies in Computer and Information Sciences at Virginia Tech. 
+            I am passionate about exploring diverse technologies including systems engineering, 
+            web backend development, and mobile applications. 
+            My goal is to use this broad expertise to create software solutions that improve user engagement and operational efficiency.
+            <br><br>
+            &nbsp;&nbsp;Currently, at Virginia Tech, 
+            I'm engaged in developing projects that stretch my skills in new directions. 
+            This semester, I have completed three significant projects: 
+            a responsive bookstore web application, an enhancement for the PintOS operating system scheduler, 
+            and an AI-powered coding assistant, 
+            showcasing my ability to integrate complex software solutions with user-centric design.
+            <br><br>
+            &nbsp;&nbsp;Previously at Getac Technology Corporation, I focused on Android applications, 
+            enhancing system stability and longevity. 
+            I developed an automated testing application for Android tablets that streamlined the quality assurance process. 
+            My academic research at the National Taiwan University of Science and Technology involved designing algorithms for IoT networks, 
+            which significantly improved network efficiency. 
+            These experiences have deepened my technical skills and analytical abilities.
+            As I continue to grow in my field, 
+            I am eager to connect with professionals who are passionate about leveraging technology to solve real-world problems. Let's collaborate and create impactful solutions together.</p>
+    </section>
+
+    <section id="experience" class="experience-section">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="timeline-date">June 2022 – August 2022</span>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h4>Getac Inc. - Software Engineer Intern</h4>
+                    <ul>
+                        <li>Designed solution/comment dashboards for order management; Optimized SQL queries.</li>
+                        <li>Applied BERT, a natural language processing model, to improve the query speeds by 10%.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 其他经历 -->
+        </div>
+    </section>
+    
+
+    <section id="education" class="education-section">
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="education-item">
+                <div class="school-and-date">
+                    <h3 class="school-name">Virginia Tech</h3>
+                    <p class="date">Jun 2024 - Dec 2025</p>
+                </div>
+                <p class="degree">Master of engineering in Computer Science</p>
+                <!-- <p class="gpa">GPA 3.9 / 4.0</p> -->
+            </div>
+            <div class="education-item">
+                <div class="school-and-date">
+                    <h3 class="school-name">National Taiwan University of Science and Technology</h3>
+                    <p class="date">Sept 2020 - Sept 2022</p>
+                </div>
+                <p class="degree">Master of Science in Computer Science</p>
+            </div>
+            <div class="education-item">
+                <div class="school-and-date">
+                    <h3 class="school-name">National Taiwan University</h3>
+                    <p class="date">Sept 2013 - Sept 2017</p>
+                </div>
+                <p class="degree">Bachelor of Science in Agriculture Chemistry</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects" class="project-section">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-image">
+                <img src="asset/image/multi-go.png" alt="Project Image">
+            </div>
+            <div class="project-description">
+                <h3>Multi Go</h3>
+                <p>This game was designed many years ago when I first started learning programming languages and Python. Looking back, some coding styles and designs may not seem ideal to me now, but it remains an enjoyable game.
+
+                    This is a simple Go game that allows three players to participate. The rules are identical to those of traditional Go, with the primary difference being the addition of a third player (the Blue one). Players of different colors are enemies to each other. They can cooperate to trap one another or try to win independently.
+                    
+                    The successful version 0.0 game is in multi_go_0.0.py</p>
+                <a href="https://github.com/cliff15037/Project_Boardgame" class="view-project-btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming Languages:</h3>
+                <div class="skills-list">
+                    <span class="skill">C</span>
+                    <span class="skill">C++</span>
+                    <span class="skill">Java</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">Javascript</span>
+                    <span class="skill">TypeScript</span>
+                    <span class="skill">Kotlin</span>
+                    <span class="skill">PHP</span>
+                    <!-- 更多技能 -->
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Web Development:</h3>
+                <div class="skills-list">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">React.js</span>
+                    <span class="skill">Node.js</span>
+                    <!-- 更多技能 -->
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Database management:</h3>
+                <div class="skills-list">
+                    <span class="skill">MySQL</span>
+                    <span class="skill">MongoDB</span>
+                    <!-- 更多技能 -->
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Web Development:</h3>
+                <div class="skills-list">
+                    <span class="skill">Git</span>
+                    <span class="skill">Linux</span>
+                    <span class="skill">Docker</span>
+                    <!-- 更多技能 -->
+                </div>
+            </div>
+            <!-- 更多技能类别 -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 tzuyi chuang</p>
+    </footer>
 </body>
 </html>
-
