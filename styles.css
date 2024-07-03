@@ -69,8 +69,8 @@ footer {
     text-align: left;
     /* background-color: #007BFF; */
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; */
 }
 
 .timeline {
@@ -102,8 +102,11 @@ footer {
 }
 
 .timeline-content {
+    width: 60%; /* 设置宽度，确保内容部分的稳定布局 */
     padding-left: 20px;
     border-left: 3px solid #4CAF50;
+    word-wrap: break-word; /* 确保长单词也能换行 */
+    text-align: justify;
 }
 
 
