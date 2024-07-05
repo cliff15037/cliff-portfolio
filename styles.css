@@ -1,17 +1,17 @@
 /* banner part */
 .full-width-image {
     width: 100%;
-    height: 500px;  /* 固定高度，例如500px */
-    display: block; /* 确保图片作为块级元素，消除下方空白 */
-    margin: 0 auto; /* 水平居中图片 */
-    opacity: 0.5; /* 降低图片透明度 */
+    height: 500px;  /* Fixed height, e.g., 500px */
+    display: block; /* Ensures the image acts as a block element, eliminating whitespace below */
+    margin: 0 auto; /* Centers the image horizontally */
+    opacity: 0.5; /* Reduces image opacity */
 }
 
 .header-image {
     position: relative; /* Set the positioning context for absolute positioned elements inside */
     width: 100%; /* Ensure the container fills the width */
     height: auto; /* Adjust the height based on the image */
-    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
 }
 
 .name-overlay {
@@ -70,22 +70,22 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 20px;
-    position: relative; /* 改为relative避免遮盖其他内容，或根据需要调整 */
+    position: relative; /* Changed to relative to avoid covering other content */
     width: 100%;
-    clear: both; /* 清除浮动影响 */
+    clear: both; /* Clears any float effects */
 }
 
 
 /* about part */
 .about-section {
-    margin: 30px auto; /* 上下間距保持30px，左右自動居中 */
+    margin: 30px auto; /* Maintains a 30px margin top and bottom, auto on the sides */
     padding: 15px;
-    max-width: 60%; /* 最大寬度為容器寬度的80% */
-    width: 100%; /* 預設寬度為100%，會自動縮放到max-width的限制 */
+    max-width: 60%; /* Maximum width is 80% of the container width */
+    width: 100%; /* Default width is 100%, will scale down to max-width */
 }
 
 .about-section p{
-    margin: 30px auto; /* 上下間距保持30px，左右自動居中 */
+    margin: 30px auto; /* Maintains a 30px margin top and bottom, auto on the sides */
     padding: 15px;
     text-align: justify;
 }
@@ -104,20 +104,20 @@ footer {
 .timeline {
     display: flex;
     flex-direction: column;
-    align-items: center; /* 将时间轴项目居中对齐 */
+    align-items: center; /* Centers timeline items */
 }
 
 .timeline-item {
-    width: 100%; /* 保证时间线项使用可用空间 */
+    width: 100%; /* Ensures timeline items use the available space */
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center; /* 确保时间线内容水平居中 */
+    justify-content: center; /* Ensures timeline content is horizontally centered */
     margin-bottom: 20px;
 }
 
 .timeline-date {
-    margin-right: 20px; /* 与时间标记保持间距 */
+    margin-right: 20px; /* Maintains spacing with the timeline marker */
     color: #1E90FF;
 }
 
@@ -126,14 +126,14 @@ footer {
     height: 20px;
     background-color: #1E90FF;
     border-radius: 50%;
-    margin-right: 10px; /* 与内容保持一定距离 */
+    margin-right: 10px; /* Maintains some distance from the content */
 }
 
 .timeline-content {
-    width: 60%; /* 设置宽度，确保内容部分的稳定布局 */
+    width: 60%; /* Sets width to ensure stable layout for content */
     padding-left: 20px;
     border-left: 3px solid #1E90FF;
-    word-wrap: break-word; /* 确保长单词也能换行 */
+    word-wrap: break-word; /* Ensures long words can wrap */
     text-align: justify;
 }
 
@@ -167,68 +167,67 @@ footer {
 
 .school-name, .degree, .gpa {
     margin: 0;
-    padding-left: 0;  /* 确保没有内边距推动文本 */
-    text-align: left;  /* 确保文本对齐方式为左对齐 */
-    width: auto;  /* 自动调整宽度 */
+    padding-left: 0;  /* Ensures no padding pushes the text */
+    text-align: left;  /* Ensures text aligns left */
+    width: auto;  /* Automatically adjusts width */
 }
 
 .school-name {
     font-size: 1.25rem;
     color: #333;
-    flex-grow: 0;  /* 防止标题区域过度扩展 */
-    white-space: nowrap;  /* 防止标题换行 */
+    flex-grow: 0;  /* Prevents the title area from expanding excessively */
+    white-space: nowrap;  /* Prevents the title from wrapping */
 }
 
 .degree, .gpa {
-    flex-grow: 1;  /* 允许详细信息扩展以填充空间 */
-    padding-left: 10px;  /* 为详细信息提供一点空间 */
+    flex-grow: 1;  /* Allows detail to expand to fill space */
+    padding-left: 10px;  /* Provides a bit of space for details */
 }
 
 .date {
     margin: 0;
     color: #666;
     white-space: nowrap;
-    padding-left: 10px;  /* 与学校名称保持一定的空间 */
-    flex-shrink: 0;  /* 防止日期部分被压缩 */
+    padding-left: 10px;  /* Maintains some space from the school name */
+    flex-shrink: 0;  /* Prevents the date section from being compressed */
 }
 
 
 
 /* Skills part */
-/* Skills part */
 .skills-section {
-    width: 50%;  /* 或者根据页面布局调整宽度 */
-    margin: 20px auto; /* 居中 */
+    width: 50%;  /* Adjust width according to page layout */
+    margin: 20px auto; /* Centers */
     text-align: left;
 }
 
 .skills-container {
-    background-color: #fff; /* 白色背景 */
+    background-color: #fff;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15); /* 添加阴影以提升层次感 */
-    border-radius: 10px; /* 圆角边框 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15); /* Adds shadow */
+    border-radius: 10px;
 }
 
 .skill-category {
-    margin-bottom: 20px; /* 每个类别之间的间距 */
+    margin-bottom: 20px; 
 }
 
 .skill-category h3 {
-    color: #333; /* 暗灰色文本 */
-    margin-bottom: 10px; /* 标题下的间距 */
+    color: #333; 
+    margin-bottom: 10px; 
 }
 
 .skills-list {
     display: flex;
-    flex-wrap: wrap; /* 允许技能标签换行 */
-    gap: 10px; /* 设置技能之间的间距 */
+    flex-wrap: wrap; /* Allows skill tags to wrap */
+    gap: 10px; /* Sets spacing between skills */
 }
 
 .skill {
-    background-color: #f0f0f0; /* 技能背景颜色 */
-    padding: 5px 10px; /* 内边距 */
-    border-radius: 5px; /* 圆角边框 */
-    font-size: 0.9rem; /* 文字大小 */
+    background-color: #f0f0f0; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-size: 0.9rem; 
 }
 
 
@@ -236,25 +235,25 @@ footer {
 
 /* projects part */
 .project-section {
-    margin: 30px auto; /* 上下間距保持30px，左右自動居中 */
+    margin: 30px auto;
     padding: 15px;
-    max-width: 50%; /* 最大寬度為容器寬度的80% */
-    width: 100%; /* 預設寬度為100%，會自動縮放到max-width的限制 */
+    max-width: 50%; 
+    width: 100%; 
 }
 
 .project-container {
     display: flex;
     align-items: flex-start;
-    background-color: #f8f9fa; /* 設定背景顏色 */
-    border: 1px solid #ddd; /* 設定邊框 */
+    background-color: #f8f9fa; 
+    border: 1px solid #ddd; 
     padding: 15px;
 }
 
 .project-image {
-    flex: 0 0 250px; /* 固定寬度為200px，不變化 */
-    height: 250px; /* 固定高度 */
-    margin-right: 20px; /* 圖片與描述之間的間距 */
-    overflow: hidden; /* 如果圖片太大，隱藏超出部分 */
+    flex: 0 0 250px; /* Fixed width at 200px, does not change */
+    height: 250px; 
+    margin-right: 20px; 
+    overflow: hidden; /* Hides any parts of the image that are too large */
 }
 
 .project-image img {
@@ -264,28 +263,38 @@ footer {
 }
 
 .project-description {
-    flex: 1; /* 描述部分佔據剩餘空間 */
+    flex: 1; /* Description part takes up the remaining space */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* 在頂部和按鈕之間分配空間 */
+    justify-content: space-between; /* Distributes space between the top and the button */
 }
 
 .project-description h3 {
-    margin-top: 0; /* 移除標題的頂部間距 */
+    margin-top: 0; 
     text-align: center;
 }
 
 .project-description p {
-    margin-top: 0; /* 移除標題的頂部間距 */
+    margin-top: 0; 
     text-align: justify;
 }
 
 .view-project-btn {
-    align-self: center; /* 將按鈕居中於描述部分 */
+    align-self: center; 
     display: block;
-    margin: 10px auto 0; /* 按鈕居中，並有間距 */
+    margin: 10px auto 0; /* Centers the button and adds spacing */
     padding: 5px 15px;
     color: #1E90FF;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-project-restricted-btn {
+    align-self: center; 
+    display: block;
+    margin: 10px auto 0; /* Centers the button and adds spacing */
+    padding: 5px 15px;
+    color: #666;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -294,21 +303,21 @@ footer {
 
 /*to top button part*/
 .to-top-btn {
-    position: fixed;  /* 固定位置，使其在滾動時保持在視窗的相同位置 */
-    bottom: 20px;     /* 距離底部 20px */
-    right: 20px;      /* 距離右邊 20px */
+    position: fixed;  /* Fixed position, stays in the same place during scrolling */
+    bottom: 20px;     /* 20px from the bottom */
+    right: 20px;      
     padding: 10px 15px;
-    background-color: #666; /* 淺綠色背景 */
-    color: white;     /* 白色文字 */
-    text-decoration: none; /* 去掉下劃線 */
-    border-radius: 5px; /* 圓角邊框 */
-    font-size: 16px;  /* 文字大小 */
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 添加陰影 */
-    z-index: 1000;   /* 確保按鈕位於其他元素之上 */
+    background-color: #666; 
+    color: white; 
+    text-decoration: none; /* Removes underline */
+    border-radius: 5px; 
+    font-size: 16px;  
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); 
+    z-index: 1000;   
 }
 
 .to-top-btn:hover {
-    background-color: #1E90FF; /* 滑鼠懸停時變更背景顏色 */
+    background-color: #1E90FF; 
 }
 
 
