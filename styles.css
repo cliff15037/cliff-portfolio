@@ -7,7 +7,7 @@
     opacity: 0.5; /* Reduces image opacity */
 }
 
-.header-image {
+.banner-image {
     position: relative; /* Set the positioning context for absolute positioned elements inside */
     width: 100%; /* Ensure the container fills the width */
     height: auto; /* Adjust the height based on the image */
@@ -36,10 +36,31 @@ body, html {
 
 /* Header navigation links style */
 header {
+    position: fixed;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    width: 100%;
+    z-index: 10000;
     background-color: #333;
     color: white;
     padding: 10px 20px;
     text-align: center;  /* This centers the navigation links */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* st the height of the logo image */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;  /* Allows nav to take the remaining space */
 }
 
 header nav a {
@@ -47,6 +68,7 @@ header nav a {
     padding: 10px;
     text-decoration: none;
     transition: color 0.3s;
+    text-align: center;
 }
 
 header nav a:hover {
@@ -118,13 +140,13 @@ footer {
 
 .timeline-date {
     margin-right: 20px; /* Maintains spacing with the timeline marker */
-    color: #1E90FF;
+    color: #4169E1;
 }
 
 .timeline-marker {
     width: 20px;
     height: 20px;
-    background-color: #1E90FF;
+    background-color: #4169E1;
     border-radius: 50%;
     margin-right: 10px; /* Maintains some distance from the content */
 }
@@ -132,7 +154,7 @@ footer {
 .timeline-content {
     width: 60%; /* Sets width to ensure stable layout for content */
     padding-left: 20px;
-    border-left: 3px solid #1E90FF;
+    border-left: 3px solid #4169E1;
     word-wrap: break-word; /* Ensures long words can wrap */
     text-align: justify;
 }
